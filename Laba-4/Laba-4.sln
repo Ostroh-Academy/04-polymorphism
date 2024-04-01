@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba-4", "Laba-4\Laba-4.csproj", "{A3C44A4A-AF5D-4D74-A79D-CAE801FB4A18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba-4.1", "Laba-4.1\Laba-4.1.csproj", "{C2AC690E-062D-4EB3-9E45-AD76561B0654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab-4.2", "Lab-4.2\Lab-4.2.csproj", "{51DFA21F-1F23-4390-8575-0F24C9D763B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3C44A4A-AF5D-4D74-A79D-CAE801FB4A18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C44A4A-AF5D-4D74-A79D-CAE801FB4A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C44A4A-AF5D-4D74-A79D-CAE801FB4A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C44A4A-AF5D-4D74-A79D-CAE801FB4A18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2AC690E-062D-4EB3-9E45-AD76561B0654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2AC690E-062D-4EB3-9E45-AD76561B0654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2AC690E-062D-4EB3-9E45-AD76561B0654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2AC690E-062D-4EB3-9E45-AD76561B0654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51DFA21F-1F23-4390-8575-0F24C9D763B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51DFA21F-1F23-4390-8575-0F24C9D763B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51DFA21F-1F23-4390-8575-0F24C9D763B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51DFA21F-1F23-4390-8575-0F24C9D763B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABBB577E-6DF0-4BCE-B925-832506A9BECD}
+	EndGlobalSection
+EndGlobal
