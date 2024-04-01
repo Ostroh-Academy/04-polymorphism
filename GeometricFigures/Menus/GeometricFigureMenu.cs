@@ -18,7 +18,7 @@ public class GeometricFigureMenu
             { "Tetrahedron", () => { figure = CreateTetrahedron(); } }
         };
 
-        var menuConfiguration = new MenuConfiguration(title: "Open figure menu", writeHeaderAction: HeaderAction,
+        var menuConfiguration = new MenuConfiguration(title: "Create figure menu", writeHeaderAction: HeaderAction,
             enableCloseAfterOperationDone: true);
 
         var menu = menuConfiguration.CreateMenu(args, menuOptions);
