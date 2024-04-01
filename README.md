@@ -206,8 +206,10 @@
 ## Порівняння
 З вітуальним 
 ![image](https://github.com/olehSokalskyi/04-polymorphism-olehSokalskyi/assets/162996249/040f81d7-cd04-452e-b866-fe9783cb438c)
+
 Без
 ![image](https://github.com/olehSokalskyi/04-polymorphism-olehSokalskyi/assets/162996249/b4341d81-3cf3-4767-8c88-c91793b427bd)
+
 Якщо не використовувати base.CheckVectorSatisfies(x) то потрібно перевизначити повністю весь метод щоб отримати бажаний результат.
 Цей підхід є не бажаним бо тоді порушуються правила поліморфізму та наслідування
 ##Висновок
