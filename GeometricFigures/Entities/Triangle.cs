@@ -13,7 +13,7 @@ public class Triangle
         Point3 = point3;
     }
 
-    public virtual string PrintCoordinates()
+    public string PrintCoordinates()
     {
         return $"Coordinates of the triangle: " +
                $"({Point1.X},{Point1.Y},{Point1.Z}), " +
@@ -21,7 +21,7 @@ public class Triangle
                $"({Point3.X},{Point3.Y},{Point3.Z})";
     }
 
-    public virtual double CalculateArea()
+    public double CalculateArea()
     {
         var a = Point1.DistanceTo(Point2);
         var b = Point2.DistanceTo(Point3);

@@ -2,7 +2,7 @@
 
 public class EquilateralTriangle : Triangle
 {
-    public override double CalculateArea()
+    public double CalculateArea()
     {
         var a = Point1.DistanceTo(Point2);
 

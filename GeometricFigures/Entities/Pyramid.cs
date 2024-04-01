@@ -10,7 +10,7 @@ public class Pyramid : Triangle
         base.SetCoordinates(point1, point2, point3);
     }
     
-    public override string PrintCoordinates()
+    public string PrintCoordinates()
     {
         return $"Coordinates of the pyramid: " +
                $"({Point1.X},{Point1.Y},{Point1.Z}), " +
@@ -19,7 +19,7 @@ public class Pyramid : Triangle
                $"({Point4.X},{Point4.Y},{Point4.Z})";
     }
 
-    public override double CalculateArea()
+    public double CalculateArea()
     {
         var baseArea = base.CalculateArea();
         
