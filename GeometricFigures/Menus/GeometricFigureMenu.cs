@@ -8,7 +8,7 @@ public class GeometricFigureMenu
 {
     public Triangle ChooseFigure(string[] args)
     {
-        var figure = new Triangle();
+        var figure = Triangle.Create();
 
         var menuOptions = new Dictionary<string, Action>
         {
@@ -24,7 +24,7 @@ public class GeometricFigureMenu
         var menu = menuConfiguration.CreateMenu(args, menuOptions);
         menu.ShowAsync();
 
-        return figure!;
+        return figure;
 
         void HeaderAction() => Console.WriteLine("Choose the type of figure you prefer:");
     }
@@ -36,7 +36,7 @@ public class GeometricFigureMenu
         var point3 = ReadPoint("Enter coordinates for Point3 (x y z): ");
         var point4 = ReadPoint("Enter coordinates for Point4 (x y z): ");
 
-        var tetrahedron = new Tetrahedron();
+        var tetrahedron = Tetrahedron.Create();
         tetrahedron.SetCoordinates(point1, point2, point3, point4);
 
         return tetrahedron;
@@ -49,7 +49,7 @@ public class GeometricFigureMenu
         var point3 = ReadPoint("Enter coordinates for Point3 (x y z): ");
         var point4 = ReadPoint("Enter coordinates for Point4 (x y z): ");
 
-        var pyramid = new Pyramid();
+        var pyramid = Pyramid.Create();
         pyramid.SetCoordinates(point1, point2, point3, point4);
 
         return pyramid;
@@ -61,7 +61,7 @@ public class GeometricFigureMenu
         var point2 = ReadPoint("Enter coordinates for Point2 (x y z): ");
         var point3 = ReadPoint("Enter coordinates for Point3 (x y z): ");
 
-        var equilateralTriangle = new EquilateralTriangle();
+        var equilateralTriangle = EquilateralTriangle.Create();
         equilateralTriangle.SetCoordinates(point1, point2, point3);
 
         return equilateralTriangle;
@@ -73,7 +73,7 @@ public class GeometricFigureMenu
         var point2 = ReadPoint("Enter coordinates for Point2 (x y z): ");
         var point3 = ReadPoint("Enter coordinates for Point3 (x y z): ");
 
-        var triangle = new Triangle();
+        var triangle = Triangle.Create();
         triangle.SetCoordinates(point1, point2, point3);
 
         return triangle;

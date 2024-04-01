@@ -3,6 +3,13 @@
 public class Pyramid : Triangle
 {
     protected Point3D Point4 { get; set; } = null!;
+    
+    protected Pyramid() { }
+
+    public new static Pyramid Create()
+    {
+        return new Pyramid();
+    }
 
     public void SetCoordinates(Point3D point1, Point3D point2, Point3D point3, Point3D point4)
     {
@@ -10,7 +17,7 @@ public class Pyramid : Triangle
         base.SetCoordinates(point1, point2, point3);
     }
     
-    public string PrintCoordinates()
+    public override string PrintCoordinates()
     {
         return $"Coordinates of the pyramid: " +
                $"({Point1.X},{Point1.Y},{Point1.Z}), " +
@@ -19,7 +26,7 @@ public class Pyramid : Triangle
                $"({Point4.X},{Point4.Y},{Point4.Z})";
     }
 
-    public double CalculateArea()
+    public override double CalculateArea()
     {
         var baseArea = base.CalculateArea();
         

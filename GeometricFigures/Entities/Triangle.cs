@@ -6,6 +6,13 @@ public class Triangle
     protected Point3D Point2 { get; private set; } = null!;
     protected Point3D Point3 { get; private set; } = null!;
 
+    protected Triangle(){}
+    
+    public static Triangle Create()
+    {
+        return new Triangle();
+    }
+
     public void SetCoordinates(Point3D point1, Point3D point2, Point3D point3)
     {
         Point1 = point1;
@@ -13,7 +20,7 @@ public class Triangle
         Point3 = point3;
     }
 
-    public string PrintCoordinates()
+    public virtual string PrintCoordinates()
     {
         return $"Coordinates of the triangle: " +
                $"({Point1.X},{Point1.Y},{Point1.Z}), " +
@@ -21,7 +28,7 @@ public class Triangle
                $"({Point3.X},{Point3.Y},{Point3.Z})";
     }
 
-    public double CalculateArea()
+    public virtual double CalculateArea()
     {
         var a = Point1.DistanceTo(Point2);
         var b = Point2.DistanceTo(Point3);

@@ -1,8 +1,15 @@
 ﻿namespace GeometricFigures.Entities;
 
-public class EquilateralTriangle : Triangle
+public sealed class EquilateralTriangle : Triangle
 {
-    public double CalculateArea()
+    private EquilateralTriangle() { }
+
+    public new static EquilateralTriangle Create()
+    {
+        return new EquilateralTriangle();
+    }
+    
+    public override double CalculateArea()
     {
         var a = Point1.DistanceTo(Point2);
 

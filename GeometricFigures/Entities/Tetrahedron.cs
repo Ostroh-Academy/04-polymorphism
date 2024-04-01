@@ -2,7 +2,14 @@
 
 public sealed class Tetrahedron : Pyramid
 {
-    public string PrintCoordinates()
+    private Tetrahedron() {}
+
+    public new static Tetrahedron Create()
+    {
+        return new Tetrahedron();
+    }
+    
+    public override string PrintCoordinates()
     {
         return $"Coordinates of the tetrahedron: " +
                $"({Point1.X},{Point1.Y},{Point1.Z}), " +
@@ -11,7 +18,7 @@ public sealed class Tetrahedron : Pyramid
                $"({Point4.X},{Point4.Y},{Point4.Z})";
     }
     
-    public double CalculateArea()
+    public override double CalculateArea()
     {
         var a = Point1.DistanceTo(Point2);
         var b = Point2.DistanceTo(Point3);
