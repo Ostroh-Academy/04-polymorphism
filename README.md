@@ -1,3 +1,9 @@
+![image](https://github.com/Ostroh-Academy/04-polymorphism-OleksiiKIiain/assets/85789953/0b97ed76-283f-47ae-816e-c047f7ee0c1f)
+![image](https://github.com/Ostroh-Academy/04-polymorphism-OleksiiKIiain/assets/85789953/425dea35-acc8-4e91-ba33-f2576e197782)
+
+
+бачимо що з допомогою override ми можемо переписати метод базового класу і переписати свій функціонал, так як якщо використати метод базового класу то ми побачимо тільки 1 вектор з матриці
+
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/5ZerStQK)
 
 **Назва роботи: Використання механізму віртуальних методів
