@@ -17,8 +17,8 @@ internal class Parallelepiped : Rectangle
     }
 
 
-    public bool IsPointInsideByThreeCoordinates(double x, double y, double z)
+    public bool IsPointInside(double x, double y, double z)
     {
-        return base.IsPointInsideByTwoCoordinates(x, y) && z >= b3 && z <= a3;
+        return base.IsPointInside(x, y) && z >= b3 && z <= a3;
     }
 }

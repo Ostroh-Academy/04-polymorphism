@@ -26,7 +26,7 @@ internal class Rectangle
         Console.WriteLine($"a1: {a1}, a2: {a2}, b1: {b1}, b2: {b2}");
     }
 
-    public bool IsPointInsideByTwoCoordinates(double x, double y)
+    public bool IsPointInside(double x, double y)
     {
         return (x >= b1 && x <= a1 && y >= b2 && y <= a2);
     }

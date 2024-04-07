@@ -13,7 +13,7 @@ Console.Write("x :> ");
 double x = double.Parse(Console.ReadLine());
 Console.Write("y :> ");
 double y = double.Parse(Console.ReadLine());
-Console.WriteLine($"Is the point ({x}, {y}) inside rectangle: {rectangle.IsPointInsideByTwoCoordinates(x, y)}");
+Console.WriteLine($"Is the point ({x}, {y}) inside rectangle: {rectangle.IsPointInside(x, y)}");
 
 Console.WriteLine("\nEnter point coordinates (x, y, z) to check if it's inside the parallelepiped:");
 Console.Write("x :> ");
@@ -22,4 +22,4 @@ Console.Write("y :> ");
 double y2 = double.Parse(Console.ReadLine());
 Console.Write("z :> ");
 double z2 = double.Parse(Console.ReadLine());
-Console.WriteLine($"Is the point ({x2}, {y2}, {z2}) inside parallelepiped: {parallelepiped.IsPointInsideByThreeCoordinates(x2, y2, z2)}");
+Console.WriteLine($"Is the point ({x2}, {y2}, {z2}) inside parallelepiped: {parallelepiped.IsPointInside(x2, y2, z2)}");
