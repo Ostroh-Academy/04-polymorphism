@@ -1,10 +1,10 @@
 ﻿using System;
 
-public class Sphere
+public abstract class Shape
 {
     protected double a, b, c, R;
 
-    public Sphere(double a, double b, double c, double R)
+    public Shape(double a, double b, double c, double R)
     {
         this.a = a;
         this.b = b;
@@ -12,7 +12,7 @@ public class Sphere
         this.R = R;
     }
 
-    public void SetCoefficients(double a, double b, double c, double R)
+    public virtual void SetCoefficients(double a, double b, double c, double R)
     {
         this.a = a;
         this.b = b;
@@ -20,7 +20,7 @@ public class Sphere
         this.R = R;
     }
 
-    public void PrintCoefficients()
+    public virtual void PrintCoefficients()
     {
         Console.WriteLine("a = {0}", a);
         Console.WriteLine("b = {0}", b);
@@ -28,13 +28,20 @@ public class Sphere
         Console.WriteLine("R = {0}", R);
     }
 
-    public double GetVolume()
+    public abstract double GetVolume();
+}
+
+public class Sphere : Shape
+{
+    public Sphere(double a, double b, double c, double R) : base(a, b, c, R) { }
+
+    public override double GetVolume()
     {
         return (4.0 / 3.0) * Math.PI * Math.Pow(R, 3);
     }
 }
 
-public class Ellipsoid : Sphere
+public class Ellipsoid : Shape
 {
     private double b1, b2, b3;
 
@@ -45,13 +52,12 @@ public class Ellipsoid : Sphere
         this.b3 = b3;
     }
 
-    // Ми не можемо використовувати override тут, бо методи не є віртуальними
-    public new void SetCoefficients(double a, double b, double c, double R)
+    public override void SetCoefficients(double a, double b, double c, double R)
     {
         base.SetCoefficients(a, b, c, R);
     }
 
-    public new void PrintCoefficients()
+    public override void PrintCoefficients()
     {
         base.PrintCoefficients();
         Console.WriteLine("b1 = {0}", b1);
@@ -59,9 +65,53 @@ public class Ellipsoid : Sphere
         Console.WriteLine("b3 = {0}", b3);
     }
 
-    public new double GetVolume()
+    public override double GetVolume()
     {
         return (4.0 / 3.0) * Math.PI * R * b1 * b2;
+    }
+}
+
+public abstract class ShapeFactory
+{
+    public abstract Shape CreateShape();
+}
+
+public class SphereFactory : ShapeFactory
+{
+    private double a, b, c, R;
+
+    public SphereFactory(double a, double b, double c, double R)
+    {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.R = R;
+    }
+
+    public override Shape CreateShape()
+    {
+        return new Sphere(a, b, c, R);
+    }
+}
+
+public class EllipsoidFactory : ShapeFactory
+{
+    private double a, b, c, R, b1, b2, b3;
+
+    public EllipsoidFactory(double a, double b, double c, double R, double b1, double b2, double b3)
+    {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.R = R;
+        this.b1 = b1;
+        this.b2 = b2;
+        this.b3 = b3;
+    }
+
+    public override Shape CreateShape()
+    {
+        return new Ellipsoid(a, b, c, R, b1, b2, b3);
     }
 }
 
@@ -69,13 +119,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Sphere sphere = new Sphere(1, 2, 3, 4);
-        Ellipsoid ellipsoid = new Ellipsoid(5, 6, 7, 8, 9, 10, 11);
-
+        ShapeFactory sphereFactory = new SphereFactory(1, 2, 3, 4);
+        Shape sphere = sphereFactory.CreateShape();
         sphere.PrintCoefficients();
         double sphereVolume = sphere.GetVolume();
         Console.WriteLine("Sphere Volume: {0}", sphereVolume);
 
+        ShapeFactory ellipsoidFactory = new EllipsoidFactory(5, 6, 7, 8, 9, 10, 11);
+        Shape ellipsoid = ellipsoidFactory.CreateShape();
         ellipsoid.PrintCoefficients();
         double ellipsoidVolume = ellipsoid.GetVolume();
         Console.WriteLine("Ellipsoid Volume: {0}", ellipsoidVolume);
