@@ -1,0 +1,15 @@
+/Users/viktoria/Projects/lab_4_new/lab_4_new/obj/Debug/net7.0/lab_4_new.csproj.AssemblyReference.cache
+/Users/viktoria/Projects/lab_4_new/lab_4_new/obj/Debug/net7.0/lab_4_new.GeneratedMSBuildEditorConfig.editorconfig
+/Users/viktoria/Projects/lab_4_new/lab_4_new/obj/Debug/net7.0/lab_4_new.AssemblyInfoInputs.cache
+/Users/viktoria/Projects/lab_4_new/lab_4_new/obj/Debug/net7.0/lab_4_new.AssemblyInfo.cs
+/Users/viktoria/Projects/lab_4_new/lab_4_new/obj/Debug/net7.0/lab_4_new.csproj.CoreCompileInputs.cache
+/Users/viktoria/Projects/lab_4_new/lab_4_new/bin/Debug/net7.0/lab_4_new
+/Users/viktoria/Projects/lab_4_new/lab_4_new/bin/Debug/net7.0/lab_4_new.deps.json
+/Users/viktoria/Projects/lab_4_new/lab_4_new/bin/Debug/net7.0/lab_4_new.runtimeconfig.json
+/Users/viktoria/Projects/lab_4_new/lab_4_new/bin/Debug/net7.0/lab_4_new.dll
+/Users/viktoria/Projects/lab_4_new/lab_4_new/bin/Debug/net7.0/lab_4_new.pdb
+/Users/viktoria/Projects/lab_4_new/lab_4_new/obj/Debug/net7.0/lab_4_new.dll
+/Users/viktoria/Projects/lab_4_new/lab_4_new/obj/Debug/net7.0/refint/lab_4_new.dll
+/Users/viktoria/Projects/lab_4_new/lab_4_new/obj/Debug/net7.0/lab_4_new.pdb
+/Users/viktoria/Projects/lab_4_new/lab_4_new/obj/Debug/net7.0/lab_4_new.genruntimeconfig.cache
+/Users/viktoria/Projects/lab_4_new/lab_4_new/obj/Debug/net7.0/ref/lab_4_new.dll
